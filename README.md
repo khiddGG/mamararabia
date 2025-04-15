@@ -2,10 +2,8 @@
 
 Mamararabia is a web project that ...
 
-## Features
-- Feature 1
-- Feature 2
-- Feature 3
+No Features
+message me @ https://m.me/Kh1ddTV/
 
 ## Installation
 To run this project locally, follow these steps:
