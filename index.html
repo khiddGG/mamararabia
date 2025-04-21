@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <link rel="icon" type="image/jpeg" href="profile.jpg">
-
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mohammar Arabia | IT Support Portfolio</title>
@@ -50,6 +48,41 @@
     ul {
       padding-left: 1.5rem;
     }
+    .modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  padding-top: 60px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.9);
+}
+
+.modal:target {
+  display: block;
+}
+
+.modal-content {
+  margin: auto;
+  display: block;
+  max-width: 90%;
+  max-height: 80%;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(255,255,255,0.2);
+}
+
+.close {
+  position: absolute;
+  top: 30px;
+  right: 50px;
+  color: #fff;
+  font-size: 40px;
+  font-weight: bold;
+  text-decoration: none;
+}
   </style>
 </head>
 <body>
@@ -70,31 +103,23 @@
     <h2>Work Experience</h2>
     <h3>ICT Technical Support, DENR CENRO Brooke’s Point (Jul 2023 - Present)</h3>
     <ul>
-        <li>Maintain ICT hardware and facilities in the CENRO such as desktop and laptop computers</li>
-  <li>Install and configure new ICT hardware and software</li>
-  <li>Troubleshoot system and network-related problems</li>
-  <li>Conduct ICT Inventory</li>
-  <li>Troubleshoot information systems deployed by Central Office, Regional Office, or PENRO</li>
-  <li>Assist in the deployment of information systems</li>
-  <li>Perform other functions that may be assigned by the head office or immediate supervisor</li>
-
+      <li>Maintain ICT hardware and facilities</li>
+      <li>Install/configure hardware & software</li>
+      <li>Troubleshoot systems and networks</li>
+      <li>Conduct ICT inventory and assist with deployments</li>
     </ul>
 
     <h3>IT Staff, Du Ek Sam Inc (Mar 2023 - Jun 2023)</h3>
     <ul>
-      <li>Provide technical support and assistance to end-users and colleagues in resolving IT-related issues, including hardware and software problems</li>
-  <li>Diagnose and troubleshoot hardware and software problems, identify root causes, and implement solutions</li>
-  <li>Assist in managing and maintaining the organization's computer networks, including routers, switches, and firewalls</li>
-  <li>Perform routine maintenance on computer hardware, including desktops, laptops, servers, and peripherals. This may include hardware upgrades and repairs</li>
-  <li>Install, configure, and update software applications and operating systems on computers and servers</li>
-
+      <li>Provided IT support and resolved technical issues</li>
+      <li>Managed computer networks and performed maintenance</li>
+      <li>Installed and updated software and hardware</li>
     </ul>
 
-    <h3>Admin Assitant, LGU Bataraza - Municipal Treasury (Jan 2020 - Dec 2022)</h3>
+    <h3>Staff Nurse, LGU Bataraza - Municipal Treasury (Jan 2020 - Dec 2022)</h3>
     <ul>
-      <li>Receiving of RCDs-AF 51, AF 55, AF 56, Cash tickets and RCDs-BIF Form No. 16 together with duplicate receipts from Liquidating Officer</li>
-  <li>Compile triplicates of all Accountable Forms without Money Value (BIR Form # AF 51, AF 55, AF 56, Cash tickets)</li>
-  <li>Daily scanning of all duplicate Accountable Forms attached to RCD forwarded by the Liquidating Officer</li>
+      <li>Handled document processing and scanning</li>
+      <li>Compiled and managed accountable forms</li>
     </ul>
   </section>
 
@@ -105,7 +130,54 @@
       <li>Cybersecurity Proficiency Upskilling: CompTIA A+ Training - DICT</li>
       <li>PNPKI: Modern Safety Signing Orientation - DICT</li>
     </ul>
+    <p>
+      View more certificates here: 
+      <a href="https://drive.google.com/drive/folders/1ahBW9moPf23nGETmoLw5d-IvRGO06Cv9?fbclid=IwAR1B8EhO-XY4clACBMtzjn51iPQgGC_TCIdNQyG3MqwftiL_uKshNk06xPE" target="_blank">
+        Google Drive Folder
+      </a>
+    </p>
+  
+    
+    <h3 style="margin-top: 2rem;">Accomplishment Gallery</h3>
+<div style="display: flex; flex-wrap: nowrap; overflow-x: auto; gap: 1rem; margin-top: 1rem; padding-bottom: 1rem;">
+  <div style="text-align: center; min-width: 200px;">
+    <a href="#img1"><img src="pic1.jpg" alt="Accomplishment 1" style="width: 180px; border-radius: 10px;"></a>
+    <p>Install Lancable Network</p>
+  </div>
+  <div style="text-align: center; min-width: 200px;">
+    <a href="#img2"><img src="pic2.jpg" alt="Accomplishment 2" style="width: 180px; border-radius: 10px;"></a>
+    <p>Troubleshooting: PC Won’t Boot</p>
+  </div>
+  <div style="text-align: center; min-width: 200px;">
+    <a href="#img3"><img src="pic3.jpg" alt="Accomplishment 3" style="width: 180px; border-radius: 10px;"></a>
+    <p>Monitoring and Maintenance CCTV</p>
+  </div>
+  <div style="text-align: center; min-width: 200px;">
+    <a href="#img4"><img src="pic4.jpg" alt="Accomplishment 4" style="width: 180px; border-radius: 10px;"></a>
+    <p>Installing neccesary software</p>
+  </div>
+</div>
+
   </section>
+  
+  <!-- Lightbox-style modals -->
+  <div id="img1" class="modal">
+    <span class="close"><a href="#">&times;</a></span>
+    <img class="modal-content" src="pic1.jpg">
+  </div>
+  <div id="img2" class="modal">
+    <span class="close"><a href="#">&times;</a></span>
+    <img class="modal-content" src="pic2.jpg">
+  </div>
+  <div id="img3" class="modal">
+    <span class="close"><a href="#">&times;</a></span>
+    <img class="modal-content" src="pic3.jpg">
+  </div>
+  <div id="img4" class="modal">
+    <span class="close"><a href="#">&times;</a></span>
+    <img class="modal-content" src="pic4.jpg">
+  </div>
+  
 
   <section>
     <h2>Education</h2>
